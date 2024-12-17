@@ -8,13 +8,37 @@
         body {
             font-family: sans-serif;
             margin: 20px;
-            background-color: #f0f0f0; /* Màu nền nhạt */
+            transition: background-color 0.5s ease, color 0.5s ease;
         }
 
         h1 {
             text-align: center;
             margin-bottom: 30px;
             color: #333; /* Màu chữ đậm */
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #eee;
+        }
+
+        /* Màu mặc định cho tiêu đề (chế độ sáng) */
+        h1, h2, h3, h4, h5, h6 {
+            color: #000; /* Màu đen */
+        }
+
+        /* Màu cho tiêu đề khi ở chế độ tối */
+        body.dark-mode h1,
+        body.dark-mode h3,
+        body.dark-mode h4,
+        body.dark-mode h5,
+        body.dark-mode h6 {
+            color: #ddd;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
         }
 
         .container {
@@ -59,7 +83,7 @@
     <div class="container">
         <div class="member">
             <img src="placeholder.png" alt="Thành viên 1">
-            <h2> Ngguyễn Vũ Chí</h2>
+            <h2> Nguyễn Vũ Chí</h2>
             <p>Vai trò: Trưởng nhóm</p>
             <p><a href="404.html"><button> Xem Thêm </button></a></p>
         </div>
@@ -100,6 +124,28 @@
             <p><a href="404.html"><button> Xem Thêm </button></a></p>
         </div>
     </div>
+    <button id="toggleButton">dark/light mode</button>
+    <div class="content">
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+        }
+    </script>
 
 </body>
 </html>
