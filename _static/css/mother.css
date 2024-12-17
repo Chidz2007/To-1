@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Braah One|Philosopher|Tilt Warp|Tapestry&display=swap');
+html {
+    height: 100%
+}
+
+body {
+    min-height: 100%;
+    padding: 0;
+    font-family: Roboto,Nunito,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    letter-spacing: .0312rem;
+    font-size: .875rem;
+    background-color: #060818;
+    overflow: overlay;
+}
+
+a {
+    color: inherit
+}
+
+* {
+    box-sizing: border-box
+}
+
+h1 {
+    margin-bottom: .5rem;
+    font-size: 2.5rem
+}
+
+h1,h3 {
+    font-weight: 500;
+    line-height: 1.2
+}
+
+a {
+    cursor: pointer
+}
+
+._plateContainer__ {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 54px
+}
+
+._plateContainer__ ._infoContainer__ {
+    margin-top: -10px;
+    padding-top: 42px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 42px
+}
+
+@media(max-width: 800px) {
+    ._plateContainer__ ._infoContainer__ {
+        width:90%;
+        margin-top: -24px;
+    }
+}
+
+.Chidz_Avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 50%;
+    margin: 30px auto 10px;
+    height: 150px;
+    width: 150px; 
+    box-shadow: 0 1px 11px rgb(255, 255, 255);
+    animation: zoomIn 1s ease forwards, floatImg 4s ease-in-out infinite;
+    animation-delay: 2s 3s;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes floatImg {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.Chidz_Name {
+    font-family: Braah One;
+    color: #fff;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 0;
+    margin-top: -3px;
+    text-shadow: 3px 0 8px #fff
+}
+.TieuSu__ {
+    font-family: Philosopher;
+    color: #fff;
+    padding: 0;
+    line-height: 1.8;
+    margin-bottom: 0;
+    margin-top: 2px;
+    text-shadow: 3px 0 8px #fff
+}
+.button_facebook {
+    box-shadow: 0 0 5px #a8a8a8;
+    text-shadow: 3px 0 8px #fff;
+	display: flex;
+	height: 50px;
+    width: 280px;
+	padding: 0;
+	background: #3b5998;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-family: "Quicksand", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.button_facebook:hover {
+	background: #435c92;
+}
+
+.button_facebook:active {
+	background: #435c92;
+}
+
+.button_facebook__text,
+.button_facebook__icon {
+    font-family: Tilt Warp;
+    white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 33px;
+	color: #fff;
+	height: 100%;
+}
+
+.button_facebook__icon {
+	font-size: 1.5em;
+	background: rgba(0, 0, 0, 0.08);
+}
+
+._plateContainer__ ._infoContainer__ .Descriptions____ {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+
+/*
+
+===========================
+
+[SOCIAL BUTTONS]
+
+===========================
+
+*/
+.buttons___{
+    display: flex;
+    width: 300px;
+    height: 70px;
+    margin-left: -30px;
+    align-items: center;
+  }
+  .buttons___ .row-chidz{
+    display: block;
+   margin-left: 65px;
+  }
+  .buttons___ .row-chidz button{
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 90px;
+    margin: 40px 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    transition: all 0s ease-out;
+  }
+  .row-chidz button:active{
+    top: 3px;
+  }
+  .row-chidz button.facebook,
+  .row-chidz button.facebook span{
+    background: #3B5999;
+    border-left: 1px solid #2E4476;
+    box-shadow: 0px 5px 0px 0px #2E4476;
+  }
+  .row-chidz button.facebook:active{
+    box-shadow: 0px 2px 0px 0px #2E4476;
+  }
+  .row-chidz button.twitter,
+  .row-chidz button.twitter span{
+    background: #46C1F6;
+    border-left: 1px solid #269BD0;
+    box-shadow: 0px 5px 0px 0px #269BD0;
+  }
+  .row-chidz button.twitter:active{
+    box-shadow: 0px 2px 0px 0px #269BD0;
+  }
+  .row-chidz button.instagram,
+  .row-chidz button.instagram span{
+    background: #e1306c;
+    border-left: 1px solid #c91d56;
+    box-shadow: 0px 5px 0px 0px #c91d56;
+  }
+  .row-chidz button.instagram:active{
+    box-shadow: 0px 2px 0px 0px #c91d56;
+  }
+  .row-chidz button.youtube,
+  .row-chidz button.youtube span{
+    background: #DE463B;
+    border-left: 1px solid #C02B21;
+    box-shadow: 0px 5px 0px 0px #C02B21;
+  }
+  .row-chidz button.youtube:active{
+    box-shadow: 0px 2px 0px 0px #C02B21;
+  }
+  .row-chidz button span{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    top: 0;
+    left: -55px;
+    line-height: 3px;
+    font-size: 17px;
+    display: block;
+    font-weight: normal;
+    border-radius: 5px 0 0 5px;
+  }
+  .row-chidz button:active span{
+    top: -3px;
+  }
+  .row-chidz button.facebook span{
+    border-right: 1px solid #2E4476;
+  }
+  .row-chidz button.twitter span{
+    border-right: 1px solid #269BD0;
+  }
+  .row-chidz button.instagram span{
+    border-right: 1px solid #c91d56;
+  }
+  .row-chizd button.youtube span{
+    border-right: 1px solid #C02B21;
+  }
+  .row-chidz button.facebook:active span{
+    box-shadow: 0px 5px 0px 0px #2E4476,
+                6px 4px 2px rgba(0,0,0,0.3);
+  }
+  .row-chidz button.twitter:active span{
+    box-shadow: 0px 5px 0px 0px #269BD0,
+                6px 4px 2px rgba(0,0,0,0.3);
+  }
+  .row-chidz button.instagram:active span{
+    box-shadow: 0px 5px 0px 0px #c91d56,
+                6px 4px 2px rgba(0,0,0,0.3);
+  }
+  .row-chidz button.youtube:active span{
+    box-shadow: 0px 5px 0px 0px #C02B21,
+                6px 4px 2px rgba(0,0,0,0.3);
+  }
+
+
+.Chidz_Name img {
+    vertical-align: middle;
+}
+
+.__Footer__ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    height: 35px;
+}
+
+@media(max-width: 800px) {
+    .__Footer__ {
+        width: 100%;
+        margin-top: 3px;
+        height: 50px;
+    }
+}
+.Footer__ {
+    color: #fff
+}
