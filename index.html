@@ -75,6 +75,18 @@
             font-size: 14px;
             color: #666;
         }
+
+        .TieuSu {
+            text-align: center;
+            color: #fff;
+            font-family: 'Potta One';
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .typed-cursor{
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +96,7 @@
         <div class="member">
             <img src="./AVATAR/chidz.jpg" alt="Thành viên 1">
             <h2> Nguyễn Vũ Chí</h2>
-            <p>Vai trò: Trưởng nhóm</p>
+            <p class="GioiThieu"></p>
             <p><a href="https://chidz2007.github.io/Chidz/"><button> Xem Thêm </button></a></p>
         </div>
         <div class="member">
@@ -146,6 +158,14 @@
             body.classList.add('dark-mode');
         }
     </script>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+   let typed = new Typed(".GioiThieu", {
+     strings: ["", "Hey brother, I'm a Designer.", "I like website design =]] "],
+     typeSpeed: 95,
+     backSpeed: 75,
+     loop: true
+   });
+ </script>
 </body>
 </html>
